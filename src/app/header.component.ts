@@ -6,8 +6,7 @@ import { Component } from "@angular/core";
     imports:[],
     //template:"<h1>you cna define template of component here.</h1>"
     templateUrl:"./header.component.html",
-    styleUrls:["./header.component.css"],
-    
+    styleUrl:"./header.component.css",  
 })
 export class HeaderComponent{
 }
