@@ -1,0 +1,7 @@
+<div>
+    <button (click)="onClick()">  <!--adding evebnt listner click to button -->
+        <img  [src]="imagePath()" [alt]="name()"> <!-- binding data to src via property binding.-->
+        <span>{{name()}}</span>  <!-- Rendering dynamic data via string interpolation. -->
+
+    </button>
+</div>

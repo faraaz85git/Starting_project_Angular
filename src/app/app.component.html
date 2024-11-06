@@ -1,5 +1,18 @@
-<header>
-  <img src="assets/angular-logo.png" alt="The Angular logo: The letter 'A'" />
-  <h1>Let's get started!</h1>
-  <p>Time to learn all about Angular!</p>
-</header>
+<app-header></app-header>
+
+<main>
+  <ul>
+    @for (user of users; track user.id){
+      <li>
+      <app-user [id]="user.id" [avatar]="user.avatar" [name]="user.name" (select)="onSelect($event)"></app-user>
+    </li>
+    }
+    
+  </ul>
+</main>
+@if(userId){
+  <app-task [name]="userId"></app-task>
+}
+@else {
+  <p>No user</p>
+}
